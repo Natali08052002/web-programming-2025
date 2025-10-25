@@ -24,6 +24,27 @@
   backdrop-filter: blur(10px);
 }
 
+/* Мобильная версия шапки */
+@media (max-width: 768px) {
+  .header {
+    padding: 12px 20px;
+  }
+  
+  .header--scrolled {
+    padding: 8px 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .header {
+    padding: 10px 15px;
+  }
+  
+  .header--scrolled {
+    padding: 6px 15px;
+  }
+}
+
 /* ===== HEADER CONTAINER ===== */
 .header__container {
   max-width: var(--max-container-width);
@@ -184,4 +205,5 @@
   line-height: var(--button-m-line-height);
   white-space: nowrap;
   transition: color 0.3s ease;
+
 }
