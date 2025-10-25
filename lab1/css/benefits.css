@@ -5,7 +5,6 @@
     gap: 80px;
     padding: 80px;
     background-color: var(--blue-gray100);
-    overflow: hidden;
 }
 
 /* Контейнер секции */
@@ -20,15 +19,9 @@
 
 /* Визуальный блок (изображение) */
 .benefits__visual {
+    width: 368.08px;
+    height: 575px;
     flex-shrink: 0;
-    width: 40%;
-    max-width: 400px;
-}
-
-.benefits__visual img {
-    width: 100%;
-    height: auto;
-    object-fit: contain;
 }
 
 /* Обертка для текстового контента */
@@ -39,7 +32,6 @@
     justify-content: center;
     gap: 24px;
     flex: 1;
-    min-width: 0;
 }
 
 /* Основной текстовый блок */
