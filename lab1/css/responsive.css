@@ -76,7 +76,7 @@
     .benefits__container,
     .devices-section__container {
         flex-direction: column;
-        gap: 40px;
+        gap: 60px;
         text-align: center;
     }
     
@@ -84,6 +84,7 @@
     .cta__col {
         align-items: center;
         gap: 40px;
+        order: 1;
     }
     
     .hero__text,
@@ -98,8 +99,9 @@
     .devices-section__visual {
         width: 100%;
         max-width: 500px;
-        height: auto;
-        order: -1;
+        height: 400px;
+        order: 2;
+        margin: 0;
     }
     
     /* Адаптируем header для мобильных */
@@ -266,3 +268,4 @@
     }
 
 }
+
