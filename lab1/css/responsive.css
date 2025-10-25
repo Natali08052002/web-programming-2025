@@ -70,36 +70,146 @@
         padding: 80px 40px 40px;
     }
     
-    .hero__container,
-    .cta__container,
-    .features__container,
-    .benefits__container,
+    /* Hero Section - картинка под текстом */
+    .hero__container {
+        flex-direction: column;
+        gap: 40px;
+        text-align: center;
+    }
+    
+    .hero__col {
+        align-items: center;
+        gap: 40px;
+        order: 2; /* Текст идет после картинки */
+    }
+    
+    .hero__text {
+        align-items: center;
+    }
+    
+    .hero__visual {
+        width: 100%;
+        max-width: 500px;
+        height: auto;
+        order: 1; /* Картинка идет первой */
+        margin: 0 auto;
+    }
+    
+    .hero__single-image {
+        width: 100%;
+        height: auto;
+        transform: none;
+        margin: 0;
+    }
+    
+    /* Features Section - картинка под текстом */
+    .features__container {
+        flex-direction: column;
+        gap: 40px;
+        text-align: center;
+    }
+    
+    .features__col {
+        align-items: center;
+        order: 2; /* Текст после картинки */
+    }
+    
+    .features__text {
+        align-items: center;
+    }
+    
+    .features__visual {
+        width: 100%;
+        max-width: 600px;
+        order: 1; /* Картинка первой */
+        margin: 0 auto;
+    }
+    
+    .features__macbook {
+        margin-right: 0;
+        width: 100%;
+    }
+    
+    /* Benefits Section - картинка под текстом */
+    .benefits__container {
+        flex-direction: column;
+        gap: 40px;
+        text-align: center;
+    }
+    
+    .benefits__visual {
+        width: 100%;
+        max-width: 300px;
+        height: auto;
+        order: 1; /* Картинка первой */
+        margin: 0 auto;
+    }
+    
+    .benefits__text-wrapper {
+        align-items: center;
+        order: 2; /* Текст после картинки */
+    }
+    
+    .benefits__text {
+        align-items: center;
+    }
+    
+    /* Devices Section - картинка под текстом */
     .devices-section__container {
         flex-direction: column;
         gap: 40px;
         text-align: center;
     }
     
-    .hero__col,
+    .devices-section__col {
+        align-items: center;
+        order: 2; /* Текст после картинки */
+    }
+    
+    .devices-section__text {
+        align-items: center;
+    }
+    
+    .devices-section__visual {
+        width: 100%;
+        max-width: 500px;
+        order: 1; /* Картинка первой */
+        margin: 0 auto;
+    }
+    
+    .devices-section__single-image {
+        width: 100%;
+        height: auto;
+    }
+    
+    /* CTA Section - адаптация */
+    .cta__container {
+        flex-direction: column;
+        gap: 40px;
+        text-align: center;
+    }
+    
     .cta__col {
         align-items: center;
         gap: 40px;
+        order: 2;
     }
     
-    .hero__text,
     .cta__text {
         align-items: center;
     }
     
-    .hero__visual,
-    .cta__visual,
-    .features__visual,
-    .benefits__visual,
-    .devices-section__visual {
+    .cta__visual {
         width: 100%;
-        max-width: 500px;
+        max-width: 400px;
         height: auto;
-        order: -1;
+        order: 1;
+        margin: 0 auto;
+    }
+    
+    .cta__image {
+        width: 100%;
+        max-width: 400px;
     }
     
     /* Адаптируем header для мобильных */
@@ -169,6 +279,14 @@
         padding: 8px 12px;
     }
     
+    /* Уменьшаем размеры изображений для мобильных */
+    .hero__visual,
+    .features__visual,
+    .benefits__visual,
+    .devices-section__visual {
+        max-width: 400px;
+    }
+    
     .footer__columns {
         flex-direction: column;
         gap: 30px;
@@ -211,6 +329,14 @@
         font-size: 14px !important;
     }
     
+    /* Уменьшаем изображения для очень маленьких экранов */
+    .hero__visual,
+    .features__visual,
+    .benefits__visual,
+    .devices-section__visual {
+        max-width: 300px;
+    }
+    
     .partners__logos {
         gap: 20px;
     }
@@ -226,7 +352,7 @@
     }
 }
 
-/* Очень маленькие экраны  */
+/* Очень маленькие экраны */
 @media (max-width: 360px) {
     .hero__main-headline {
         font-size: 32px;
@@ -248,5 +374,13 @@
     .header__button {
         width: 100%;
         justify-content: center;
+    }
+    
+    /* Еще больше уменьшаем изображения */
+    .hero__visual,
+    .features__visual,
+    .benefits__visual,
+    .devices-section__visual {
+        max-width: 250px;
     }
 }
