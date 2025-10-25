@@ -183,6 +183,11 @@
         gap: 20px;
         text-align: center;
     }
+
+    .hero__visual {
+        height: 300px;
+        max-width: 400px;
+    }
 }
 
 /* Для очень маленьких экранов */
@@ -224,6 +229,11 @@
         justify-content: center;
         gap: 15px;
     }
+
+    .hero__visual {
+        height: 250px;
+        max-width: 300px;
+    }
 }
 
 /* Очень маленькие экраны  */
@@ -249,4 +259,10 @@
         width: 100%;
         justify-content: center;
     }
+
+    .hero__visual {
+        height: 200px;
+        max-width: 250px;
+    }
+
 }
