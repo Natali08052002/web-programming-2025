@@ -58,189 +58,184 @@
     }
 }
 
-/* ДОБАВЬТЕ ЭТОТ МЕДИА-ЗАПРОС ДЛЯ ПЕРЕМЕЩЕНИЯ КАРТИНОК */
+/* ОСНОВНОЙ МЕДИА-ЗАПРОС ДЛЯ ПЕРЕМЕЩЕНИЯ КАРТИНОК */
 @media (max-width: 1024px) {
     /* Hero Section */
     .hero {
-        padding: 100px 40px 40px !important;
+        padding: 100px 40px 40px;
     }
     
     .hero__container {
-        flex-direction: column !important;
-        gap: 40px !important;
-        text-align: center !important;
+        flex-direction: column;
+        gap: 40px;
+        text-align: center;
     }
     
     .hero__col {
-        order: 2 !important;
-        align-items: center !important;
-        gap: 30px !important;
+        order: 2;
+        align-items: center;
+        gap: 30px;
     }
     
     .hero__text {
-        align-items: center !important;
+        align-items: center;
     }
     
     .hero__visual {
-        order: 1 !important;
-        width: 100% !important;
-        max-width: 500px !important;
-        height: auto !important;
-        margin: 0 auto !important;
-        margin-bottom: 20px !important;
+        order: 1;
+        width: 100%;
+        max-width: 500px;
+        height: auto;
+        margin: 0 auto 20px;
     }
     
     .hero__single-image {
-        width: 100% !important;
-        height: auto !important;
-        transform: none !important;
-        margin: 0 !important;
+        width: 100%;
+        height: auto;
+        transform: none;
+        margin: 0;
     }
     
     /* Features Section */
     .features__container {
-        flex-direction: column !important;
-        gap: 40px !important;
-        text-align: center !important;
+        flex-direction: column;
+        gap: 40px;
+        text-align: center;
     }
     
     .features__col {
-        order: 2 !important;
-        align-items: center !important;
+        order: 2;
+        align-items: center;
     }
     
     .features__text {
-        align-items: center !important;
+        align-items: center;
     }
     
     .features__visual {
-        order: 1 !important;
-        width: 100% !important;
-        max-width: 600px !important;
-        margin: 0 auto !important;
-        margin-bottom: 20px !important;
+        order: 1;
+        width: 100%;
+        max-width: 600px;
+        margin: 0 auto 20px;
     }
     
     .features__macbook {
-        margin-right: 0 !important;
-        width: 100% !important;
+        margin-right: 0;
+        width: 100%;
     }
     
     /* Benefits Section */
     .benefits__container {
-        flex-direction: column !important;
-        gap: 40px !important;
-        text-align: center !important;
+        flex-direction: column;
+        gap: 40px;
+        text-align: center;
     }
     
     .benefits__visual {
-        order: 1 !important;
-        width: 100% !important;
-        max-width: 300px !important;
-        height: auto !important;
-        margin: 0 auto !important;
-        margin-bottom: 20px !important;
+        order: 1;
+        width: 100%;
+        max-width: 300px;
+        height: auto;
+        margin: 0 auto 20px;
     }
     
     .benefits__text-wrapper {
-        order: 2 !important;
-        align-items: center !important;
+        order: 2;
+        align-items: center;
     }
     
     .benefits__text {
-        align-items: center !important;
+        align-items: center;
     }
     
     /* Devices Section */
     .devices-section__container {
-        flex-direction: column !important;
-        gap: 40px !important;
-        text-align: center !important;
+        flex-direction: column;
+        gap: 40px;
+        text-align: center;
     }
     
     .devices-section__col {
-        order: 2 !important;
-        align-items: center !important;
+        order: 2;
+        align-items: center;
     }
     
     .devices-section__text {
-        align-items: center !important;
+        align-items: center;
     }
     
     .devices-section__visual {
-        order: 1 !important;
-        width: 100% !important;
-        max-width: 500px !important;
-        margin: 0 auto !important;
-        margin-bottom: 20px !important;
+        order: 1;
+        width: 100%;
+        max-width: 500px;
+        margin: 0 auto 20px;
     }
     
     .devices-section__single-image {
-        width: 100% !important;
-        height: auto !important;
+        width: 100%;
+        height: auto;
     }
     
     /* CTA Section */
     .cta__container {
-        flex-direction: column !important;
-        gap: 40px !important;
-        text-align: center !important;
+        flex-direction: column;
+        gap: 40px;
+        text-align: center;
     }
     
     .cta__col {
-        order: 2 !important;
-        align-items: center !important;
-        gap: 30px !important;
+        order: 2;
+        align-items: center;
+        gap: 30px;
     }
     
     .cta__text {
-        align-items: center !important;
+        align-items: center;
     }
     
     .cta__visual {
-        order: 1 !important;
-        width: 100% !important;
-        max-width: 400px !important;
-        height: auto !important;
-        margin: 0 auto !important;
-        margin-bottom: 20px !important;
+        order: 1;
+        width: 100%;
+        max-width: 400px;
+        height: auto;
+        margin: 0 auto 20px;
     }
     
     .cta__image {
-        width: 100% !important;
-        max-width: 400px !important;
+        width: 100%;
+        max-width: 400px;
     }
     
     /* Header адаптация */
     .header__nav {
-        display: none !important;
+        display: none;
     }
     
     /* How it works адаптация */
     .how-it-works__row {
-        flex-direction: column !important;
-        gap: 30px !important;
+        flex-direction: column;
+        gap: 30px;
     }
     
     .how-it-works__card {
-        margin: 0 !important;
+        margin: 0;
     }
     
     /* Partners адаптация */
     .partners__logos {
-        flex-wrap: wrap !important;
-        justify-content: center !important;
-        gap: 30px !important;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 30px;
     }
     
     /* Footer адаптация */
     .footer__columns {
-        flex-wrap: wrap !important;
-        gap: 30px !important;
+        flex-wrap: wrap;
+        gap: 30px;
     }
     
     .footer__column {
-        flex: 0 0 calc(50% - 30px) !important;
+        flex: 0 0 calc(50% - 30px);
     }
 }
 
@@ -254,32 +249,32 @@
     .benefits, 
     .devices-section, 
     .cta {
-        padding: 60px 20px 20px !important;
+        padding: 60px 20px 20px;
     }
     
     .header {
-        padding: 16px 20px !important;
+        padding: 16px 20px;
     }
     
     .hero__main-headline {
-        font-size: 42px !important;
+        font-size: 42px;
     }
     
     .hero__secondary-headline {
-        font-size: 32px !important;
+        font-size: 32px;
     }
     
     .hero__paragraph,
     .cta__description {
-        font-size: 18px !important;
+        font-size: 18px;
     }
     
     .header__buttons-group {
-        gap: 10px !important;
+        gap: 10px;
     }
     
     .header__button {
-        padding: 8px 16px !important;
+        padding: 8px 16px;
     }
     
     /* Уменьшаем размеры изображений */
@@ -287,47 +282,47 @@
     .features__visual,
     .benefits__visual,
     .devices-section__visual {
-        max-width: 400px !important;
+        max-width: 400px;
     }
     
     .footer__columns {
-        flex-direction: column !important;
-        gap: 25px !important;
+        flex-direction: column;
+        gap: 25px;
     }
     
     .footer__column {
-        flex: 0 0 100% !important;
+        flex: 0 0 100%;
     }
     
     .footer__bottom {
-        flex-direction: column !important;
-        gap: 15px !important;
-        text-align: center !important;
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
     }
 }
 
 /* Для очень маленьких экранов */
 @media (max-width: 480px) {
     .hero__main-headline {
-        font-size: 36px !important;
+        font-size: 36px;
     }
     
     .hero__secondary-headline {
-        font-size: 28px !important;
+        font-size: 28px;
     }
     
     .header__buttons-group {
-        gap: 8px !important;
+        gap: 8px;
     }
     
     .header__button {
-        padding: 6px 12px !important;
+        padding: 6px 12px;
     }
     
     .header__button-text,
     .hero__button-text,
     .cta__btn-text {
-        font-size: 14px !important;
+        font-size: 14px;
     }
     
     /* Уменьшаем изображения */
@@ -335,46 +330,46 @@
     .features__visual,
     .benefits__visual,
     .devices-section__visual {
-        max-width: 300px !important;
+        max-width: 300px;
     }
     
     .partners__logos {
-        gap: 20px !important;
+        gap: 20px;
     }
     
     .partners__logo {
-        flex: 0 0 calc(50% - 20px) !important;
+        flex: 0 0 calc(50% - 20px);
     }
     
     .footer__bottom-links {
-        flex-wrap: wrap !important;
-        justify-content: center !important;
-        gap: 15px !important;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
     }
 }
 
 /* Очень маленькие экраны */
 @media (max-width: 360px) {
     .hero__main-headline {
-        font-size: 32px !important;
+        font-size: 32px;
     }
     
     .hero__secondary-headline {
-        font-size: 24px !important;
+        font-size: 24px;
     }
     
     .header__logo {
-        font-size: 32px !important;
+        font-size: 32px;
     }
     
     .header__buttons-group {
-        flex-direction: column !important;
-        gap: 8px !important;
+        flex-direction: column;
+        gap: 8px;
     }
     
     .header__button {
-        width: 100% !important;
-        justify-content: center !important;
+        width: 100%;
+        justify-content: center;
     }
     
     /* Еще больше уменьшаем изображения */
@@ -382,6 +377,6 @@
     .features__visual,
     .benefits__visual,
     .devices-section__visual {
-        max-width: 250px !important;
+        max-width: 250px;
     }
 }
