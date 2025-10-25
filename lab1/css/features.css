@@ -1,0 +1,78 @@
+/* ===== FEATURES SECTION ===== */
+.features {
+    display: flex;
+    align-items: center;
+    gap: 80px;
+    padding: 80px;
+    background-color: var(--blue-gray100);
+}
+
+.features__container {
+    max-width: var(--max-container-width);
+    margin: 0 auto;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 80px;
+}
+
+/* Левая колонка с текстовым контентом */
+.features__col {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 24px;
+    flex: 1;
+}
+
+.features__text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 32px;
+}
+
+.features__top {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+}
+
+.features__title {
+    font-family: var(--heading-2-font-family);
+    font-weight: var(--heading-2-font-weight);
+    color: var(--blue-gray900);
+    font-size: var(--heading-2-font-size);
+    letter-spacing: var(--heading-2-letter-spacing);
+    line-height: var(--heading-2-line-height);
+    font-style: var(--heading-2-font-style);
+}
+
+.features__paragraph {
+    font-family: var(--body-XL-font-family);
+    font-weight: var(--body-XL-font-weight);
+    color: var(--blue-gray900);
+    font-size: var(--body-XL-font-size);
+    letter-spacing: var(--body-XL-letter-spacing);
+    line-height: var(--body-XL-line-height);
+    font-style: var(--body-XL-font-style);
+    margin-top: -8px;
+}
+
+/* Правая колонка с визуальным контентом */
+.features__visual {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.features__macbook {
+    width: 100%;
+    max-width: 700px;
+    height: auto;
+    object-fit: contain;
+    margin-right: -30px;
+}

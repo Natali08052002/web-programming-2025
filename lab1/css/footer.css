@@ -1,0 +1,221 @@
+/* ===== FOOTER ===== */
+.footer {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 0px 80px;
+    position: relative;
+    flex: 0 0 auto;
+    background-color: var(--blue-gray600);
+}
+
+.footer__container {
+    max-width: var(--max-container-width);
+    margin: 0 auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+/* Основные колонки футера */
+.footer__columns {
+    display: flex;
+    align-items: flex-start;
+    gap: 48px;
+    padding: 48px 0px;
+    position: relative;
+    align-self: stretch;
+    width: 100%;
+    flex: 0 0 auto;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-color: var(--blue-gray700);
+}
+
+.footer__column {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex: 1;
+    position: relative;
+}
+
+.footer__links {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position: relative;
+    align-self: stretch;
+    width: 100%;
+    flex: 0 0 auto;
+}
+
+/* Логотип и брендинг */
+.footer__logo {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    position: relative;
+    align-self: stretch;
+    width: 100%;
+    flex: 0 0 auto;
+}
+
+.footer__logo-text {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: fit-content;
+    font-family: var(--heading-5-font-family);
+    font-weight: var(--heading-5-font-weight);
+    color: var(--white);
+    font-size: var(--heading-5-font-size);
+    letter-spacing: var(--heading-5-letter-spacing);
+    line-height: var(--heading-5-line-height);
+    white-space: nowrap;
+    font-style: var(--heading-5-font-style);
+}
+
+/* Категории ссылок */
+.footer__category {
+    position: relative;
+    width: fit-content;
+    font-family: var(--subtitle-m-font-family);
+    font-weight: var(--subtitle-m-font-weight);
+    color: var(--white);
+    font-size: var(--subtitle-m-font-size);
+    letter-spacing: var(--subtitle-m-letter-spacing);
+    line-height: var(--subtitle-m-line-height);
+    white-space: nowrap;
+    font-style: var(--subtitle-m-font-style);
+}
+
+/* Общие стили для ссылок */
+.footer__link,
+.footer__link-with-badge,
+.footer__link-with-icon {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 12px 0px;
+    position: relative;
+    align-self: stretch;
+    width: 100%;
+    flex: 0 0 auto;
+}
+
+/* Стили для текста ссылок */
+.footer__link-text {
+    position: relative;
+    width: fit-content;
+    font-family: var(--body-m-font-family);
+    font-weight: var(--body-m-font-weight);
+    color: var(--white);
+    font-size: var(--body-m-font-size);
+    letter-spacing: var(--body-m-letter-spacing);
+    line-height: var(--body-m-line-height);
+    white-space: nowrap;
+    font-style: var(--body-m-font-style);
+    transition: color 0.2s ease;
+    cursor: pointer;
+}
+
+/* Эффекты наведения для ссылок */
+.footer__link:hover .footer__link-text,
+.footer__link-with-badge:hover .footer__link-text,
+.footer__link-with-icon:hover .footer__link-text,
+.footer__bottom-link:hover .footer__link-text {
+    color: var(--blue-gray300);
+}
+
+/* Бейдж с акцией */
+.footer__badge {
+    display: inline-flex;
+    height: 20px;
+    align-items: center;
+    justify-content: center;
+    padding: 2px 6px;
+    position: relative;
+    flex: 0 0 auto;
+    background-color: #F3E8FF;
+    border-radius: 6px;
+}
+
+.footer__badge-text {
+    position: relative;
+    width: fit-content;
+    font-family: var(--body-XS-font-family);
+    font-weight: var(--body-XS-font-weight);
+    color: #8A2BE2;
+    font-size: var(--body-XS-font-size);
+    letter-spacing: var(--body-XS-letter-spacing);
+    line-height: var(--body-XS-line-height);
+    white-space: nowrap;
+    font-style: var(--body-XS-font-style);
+    transition: color 0.2s ease;
+}
+
+.footer__link-with-badge:hover .footer__badge-text {
+    color: #6B21A8;
+}
+
+/* Иконки */
+.footer__icon {
+    position: relative;
+    width: 24px;
+    height: 24px;
+    transition: filter 0.2s ease;
+}
+
+.footer__link-with-icon:hover .footer__icon,
+.footer__bottom-link:hover .footer__icon {
+    filter: brightness(0.8);
+}
+
+/* Нижняя часть футера */
+.footer__bottom {
+    display: flex;
+    align-items: center;
+    gap: 48px;
+    padding: 24px 0px;
+    position: relative;
+    align-self: stretch;
+    width: 100%;
+    flex: 0 0 auto;
+}
+
+.footer__copyright {
+    position: relative;
+    flex: 1;
+    font-family: var(--body-m-font-family);
+    font-weight: var(--body-m-font-weight);
+    color: var(--white);
+    font-size: var(--body-m-font-size);
+    letter-spacing: var(--body-m-letter-spacing);
+    line-height: var(--body-m-line-height);
+    font-style: var(--body-m-font-style);
+}
+
+.footer__bottom-links {
+    display: inline-flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 32px;
+    position: relative;
+    flex: 0 0 auto;
+}
+
+.footer__bottom-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 12px 0px;
+    position: relative;
+    flex: 0 0 auto;
+    cursor: pointer;
+}

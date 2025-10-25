@@ -1,0 +1,252 @@
+/* ===== АДАПТИВНОСТЬ ===== */
+
+/* Для экранов больше 1440px - центрируем контент */
+@media (min-width: 1441px) {
+    .header__container,
+    .hero__container,
+    .partners__container,
+    .how-it-works__container,
+    .features__container,
+    .benefits__container,
+    .devices-section__container,
+    .cta__container,
+    .footer__container {
+        margin: 0 auto;
+    }
+}
+
+/* Для экранов меньше 1440px */
+@media (max-width: 1440px) {
+    .header {
+        padding: 24px 40px;
+    }
+    
+    .hero, 
+    .partners, 
+    .how-it-works, 
+    .features, 
+    .benefits, 
+    .devices-section, 
+    .cta {
+        padding: 120px 40px 60px;
+    }
+    
+    .footer {
+        padding: 0 40px;
+    }
+}
+
+/* Для экранов меньше 1200px */
+@media (max-width: 1200px) {
+    .hero__container,
+    .cta__container,
+    .features__container,
+    .benefits__container,
+    .devices-section__container {
+        gap: 60px;
+    }
+    
+    .hero__visual,
+    .cta__visual {
+        width: 450px;
+    }
+    
+    .features__visual,
+    .benefits__visual,
+    .devices-section__visual {
+        width: 450px;
+    }
+}
+
+/* Для экранов меньше 1024px - переключаемся на вертикальную компоновку */
+@media (max-width: 1024px) {
+    .hero, 
+    .partners, 
+    .how-it-works, 
+    .features, 
+    .benefits, 
+    .devices-section, 
+    .cta {
+        padding: 80px 40px 40px;
+    }
+    
+    .hero__container,
+    .cta__container,
+    .features__container,
+    .benefits__container,
+    .devices-section__container {
+        flex-direction: column;
+        gap: 40px;
+        text-align: center;
+    }
+    
+    .hero__col,
+    .cta__col {
+        align-items: center;
+        gap: 40px;
+    }
+    
+    .hero__text,
+    .cta__text {
+        align-items: center;
+    }
+    
+    .hero__visual,
+    .cta__visual,
+    .features__visual,
+    .benefits__visual,
+    .devices-section__visual {
+        width: 100%;
+        max-width: 500px;
+        height: auto;
+        order: -1;
+    }
+    
+    /* Адаптируем header для мобильных */
+    .header__nav {
+        display: none;
+    }
+    
+    /* Адаптируем карточки How it works */
+    .how-it-works__row {
+        flex-direction: column;
+        gap: 40px;
+    }
+    
+    .how-it-works__card {
+        margin: 0;
+    }
+    
+    /* Адаптируем логотипы партнеров */
+    .partners__logos {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 40px;
+    }
+    
+    /* Адаптируем футер */
+    .footer__columns {
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+    
+    .footer__column {
+        flex: 0 0 calc(50% - 30px);
+    }
+}
+
+/* Для экранов меньше 768px */
+@media (max-width: 768px) {
+    .header,
+    .hero, 
+    .partners, 
+    .how-it-works, 
+    .features, 
+    .benefits, 
+    .devices-section, 
+    .cta {
+        padding: 20px;
+    }
+    
+    .hero__main-headline {
+        font-size: 48px;
+    }
+    
+    .hero__secondary-headline {
+        font-size: 36px;
+    }
+    
+    .hero__paragraph,
+    .cta__description {
+        font-size: 18px;
+    }
+    
+    .header__buttons-group {
+        gap: 10px;
+    }
+    
+    .header__button {
+        padding: 8px 12px;
+    }
+    
+    .footer__columns {
+        flex-direction: column;
+        gap: 30px;
+    }
+    
+    .footer__column {
+        flex: 0 0 100%;
+    }
+    
+    .footer__bottom {
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+    }
+}
+
+/* Для очень маленьких экранов */
+@media (max-width: 480px) {
+    .hero__main-headline {
+        font-size: 36px;
+    }
+    
+    .hero__secondary-headline {
+        font-size: 28px;
+    }
+    
+    .header__buttons-group {
+        gap: 8px;
+    }
+    
+    .header__button {
+        padding: 6px 10px;
+        font-size: 14px;
+    }
+    
+    /* Минимальные размеры для читаемости */
+    .header__button-text,
+    .hero__button-text,
+    .cta__btn-text {
+        font-size: 14px !important;
+    }
+    
+    .partners__logos {
+        gap: 20px;
+    }
+    
+    .partners__logo {
+        flex: 0 0 calc(50% - 20px);
+    }
+    
+    .footer__bottom-links {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+}
+
+/* Очень маленькие экраны  */
+@media (max-width: 360px) {
+    .hero__main-headline {
+        font-size: 32px;
+    }
+    
+    .hero__secondary-headline {
+        font-size: 24px;
+    }
+    
+    .header__logo {
+        font-size: 40px;
+    }
+    
+    .header__buttons-group {
+        flex-direction: column;
+        gap: 8px;
+    }
+    
+    .header__button {
+        width: 100%;
+        justify-content: center;
+    }
+}

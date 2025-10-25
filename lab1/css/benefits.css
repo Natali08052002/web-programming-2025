@@ -1,0 +1,74 @@
+/* ===== BENEFITS SECTION ===== */
+.benefits {
+    display: flex;
+    align-items: center;
+    gap: 80px;
+    padding: 80px;
+    background-color: var(--blue-gray100);
+}
+
+/* Контейнер секции */
+.benefits__container {
+    max-width: var(--max-container-width);
+    margin: 0 auto;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 80px;
+}
+
+/* Визуальный блок (изображение) */
+.benefits__visual {
+    width: 368.08px;
+    height: 575px;
+    flex-shrink: 0;
+}
+
+/* Обертка для текстового контента */
+.benefits__text-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 24px;
+    flex: 1;
+}
+
+/* Основной текстовый блок */
+.benefits__text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 32px;
+}
+
+/* Верхняя часть с заголовком и описанием */
+.benefits__top {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+}
+
+/* Заголовок секции */
+.benefits__title {
+    margin-top: -1px;
+    font-family: var(--heading-2-font-family);
+    font-weight: var(--heading-2-font-weight);
+    color: var(--blue-gray900);
+    font-size: var(--heading-2-font-size);
+    letter-spacing: var(--heading-2-letter-spacing);
+    line-height: var(--heading-2-line-height);
+    font-style: var(--heading-2-font-style);
+}
+
+/* Текст описания */
+.benefits__paragraph {
+    font-family: var(--body-XL-font-family);
+    font-weight: var(--body-XL-font-weight);
+    color: var(--blue-gray900);
+    font-size: var(--body-XL-font-size);
+    letter-spacing: var(--body-XL-letter-spacing);
+    line-height: var(--body-XL-line-height);
+    font-style: var(--body-XL-font-style);
+}

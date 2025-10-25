@@ -1,0 +1,128 @@
+/* ===== HOW IT WORKS SECTION ===== */
+.how-it-works {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 80px;
+    padding: 80px;
+    background-color: var(--white);
+}
+
+/* Основной контейнер */
+.how-it-works__container {
+    max-width: var(--max-container-width);
+    margin: 0 auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 80px;
+}
+
+/* Блок с текстовым содержимым */
+.how-it-works__text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+    align-self: stretch;
+    width: 100%;
+}
+
+/* Верхняя секция с заголовком */
+.how-it-works__top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    align-self: stretch;
+    width: 100%;
+}
+
+/* Главный заголовок */
+.how-it-works__title {
+    align-self: stretch;
+    font-family: var(--heading-2-font-family);
+    font-weight: var(--heading-2-font-weight);
+    color: var(--blue-gray900);
+    font-size: var(--heading-2-font-size);
+    text-align: center;
+    letter-spacing: var(--heading-2-letter-spacing);
+    line-height: var(--heading-2-line-height);
+    font-style: var(--heading-2-font-style);
+}
+
+/* Ряд с карточками */
+.how-it-works__row {
+    display: flex;
+    align-items: flex-start;
+    gap: 80px;
+    align-self: stretch;
+    width: 100%;
+}
+
+/* Отдельная карточка */
+.how-it-works__card {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    flex: 1;
+    background-color: var(--white);
+    border-radius: 10px;
+    overflow: hidden;
+    border: 5px solid;
+    box-shadow: var(--shadow-dark-l);
+}
+
+/* Вариации цвета карточек */
+.how-it-works__card--light {
+    margin-left: -5.00px;
+    border-color: var(--cool-gray400);
+}
+
+.how-it-works__card--medium {
+    border-color: var(--cool-gray500);
+}
+
+.how-it-works__card--dark {
+    margin-right: -5.00px;
+    border-color: var(--cool-gray600);
+}
+
+/* Содержимое карточки */
+.how-it-works__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    padding: 32px;
+    align-self: stretch;
+    width: 100%;
+}
+
+/* Контейнер для иконки */
+.how-it-works__icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Изображение иконки */
+.how-it-works__icon-image {
+    width: 64px;
+    height: 64px;
+}
+
+/* Текст описания */
+.how-it-works__paragraph {
+    align-self: stretch;
+    font-family: var(--body-XL-font-family);
+    font-weight: var(--body-XL-font-weight);
+    color: var(--blue-gray900);
+    font-size: var(--body-XL-font-size);
+    text-align: center;
+    letter-spacing: var(--body-XL-letter-spacing);
+    line-height: var(--body-XL-line-height);
+    font-style: var(--body-XL-font-style);
+}

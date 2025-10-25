@@ -1,0 +1,149 @@
+/* ===== CTA SECTION ===== */
+.cta {
+    display: flex;
+    align-items: center;
+    gap: 80px;
+    padding: 160px 80px;
+    position: relative;
+    background-color: var(--blue-gray100);
+}
+
+.cta__container {
+    max-width: var(--max-container-width);
+    margin: 0 auto;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 80px;
+}
+
+/* Фоновое изображение */
+.cta__bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1;
+}
+
+/* Левая колонка с текстовым контентом */
+.cta__col {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 80px;
+    position: relative;
+    flex: 1;
+    z-index: 2;
+}
+
+/* Блок текстового контента */
+.cta__text {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    width: 100%;
+}
+
+/* Верхняя текстовая секция */
+.cta__top {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+/* Главный заголовок */
+.cta__heading {
+    font-family: var(--heading-2-font-family);
+    font-weight: var(--heading-2-font-weight);
+    color: var(--white);
+    font-size: var(--heading-2-font-size);
+    letter-spacing: var(--heading-2-letter-spacing);
+    line-height: var(--heading-2-line-height);
+    font-style: var(--heading-2-font-style);
+}
+
+/* Текст описания */
+.cta__description {
+    font-family: var(--body-XXL-font-family);
+    font-weight: var(--body-XXL-font-weight);
+    color: var(--white);
+    font-size: var(--body-XXL-font-size);
+    letter-spacing: var(--body-XXL-letter-spacing);
+    line-height: var(--body-XXL-line-height);
+    font-style: var(--body-XXL-font-style);
+}
+
+/* Контейнер кнопок */
+.cta__buttons-group {
+    display: inline-flex;
+    align-items: center;
+    gap: 16px;
+}
+
+/* Базовые стили кнопки */
+.cta__btn {
+    all: unset;
+    box-sizing: border-box;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 24px;
+    border-radius: 50px;
+    border: 2px solid var(--white);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+/* Эффекты при наведении на кнопку */
+.cta__btn:hover {
+    background-color: var(--white);
+}
+
+.cta__btn:hover .cta__btn-text {
+    color: #000000;
+}
+
+/* Контейнер текста кнопки */
+.cta__text-container {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Текст кнопки */
+.cta__btn-text {
+    width: fit-content;
+    font-family: var(--button-XL-font-family);
+    font-weight: var(--button-XL-font-weight);
+    color: var(--white);
+    font-size: var(--button-XL-font-size);
+    letter-spacing: var(--button-XL-letter-spacing);
+    line-height: var(--button-XL-line-height);
+    white-space: nowrap;
+    font-style: var(--button-XL-font-style);
+    transition: color 0.3s ease;
+}
+
+/* Правая колонка с визуальным контентом */
+.cta__visual {
+    position: relative;
+    width: 589px;
+    height: 400px;
+    flex-shrink: 0;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Главное изображение */
+.cta__image {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 20px;
+    border: 5px solid var(--white);
+    box-shadow: var(--shadow-dark-XXL);
+}
