@@ -76,7 +76,7 @@
     .benefits__container,
     .devices-section__container {
         flex-direction: column;
-        gap: 60px;
+        gap: 40px;
         text-align: center;
     }
     
@@ -84,7 +84,6 @@
     .cta__col {
         align-items: center;
         gap: 40px;
-        order: 1;
     }
     
     .hero__text,
@@ -99,9 +98,8 @@
     .devices-section__visual {
         width: 100%;
         max-width: 500px;
-        height: 400px;
-        order: 2;
-        margin: 0;
+        height: auto;
+        order: -1;
     }
     
     /* Адаптируем header для мобильных */
@@ -185,11 +183,6 @@
         gap: 20px;
         text-align: center;
     }
-
-    .hero__visual {
-        height: 300px;
-        max-width: 400px;
-    }
 }
 
 /* Для очень маленьких экранов */
@@ -231,11 +224,6 @@
         justify-content: center;
         gap: 15px;
     }
-
-    .hero__visual {
-        height: 250px;
-        max-width: 300px;
-    }
 }
 
 /* Очень маленькие экраны  */
@@ -261,11 +249,4 @@
         width: 100%;
         justify-content: center;
     }
-
-    .hero__visual {
-        height: 200px;
-        max-width: 250px;
-    }
-
 }
-
