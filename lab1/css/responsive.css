@@ -58,177 +58,73 @@
     }
 }
 
-/* ОСНОВНОЙ МЕДИА-ЗАПРОС ДЛЯ ПЕРЕМЕЩЕНИЯ КАРТИНОК */
+/* Для экранов меньше 1024px - переключаемся на вертикальную компоновку */
 @media (max-width: 1024px) {
-    /* Hero Section */
-    .hero {
-        padding: 100px 40px 40px;
+    .hero, 
+    .partners, 
+    .how-it-works, 
+    .features, 
+    .benefits, 
+    .devices-section, 
+    .cta {
+        padding: 80px 40px 40px;
     }
     
-    .hero__container {
-        flex-direction: column;
-        gap: 40px;
-        text-align: center;
-    }
-    
-    .hero__col {
-        order: 2;
-        align-items: center;
-        gap: 30px;
-    }
-    
-    .hero__text {
-        align-items: center;
-    }
-    
-    .hero__visual {
-        order: 1;
-        width: 100%;
-        max-width: 500px;
-        height: auto;
-        margin: 0 auto 20px;
-    }
-    
-    .hero__single-image {
-        width: 100%;
-        height: auto;
-        transform: none;
-        margin: 0;
-    }
-    
-    /* Features Section */
-    .features__container {
-        flex-direction: column;
-        gap: 40px;
-        text-align: center;
-    }
-    
-    .features__col {
-        order: 2;
-        align-items: center;
-    }
-    
-    .features__text {
-        align-items: center;
-    }
-    
-    .features__visual {
-        order: 1;
-        width: 100%;
-        max-width: 600px;
-        margin: 0 auto 20px;
-    }
-    
-    .features__macbook {
-        margin-right: 0;
-        width: 100%;
-    }
-    
-    /* Benefits Section */
-    .benefits__container {
-        flex-direction: column;
-        gap: 40px;
-        text-align: center;
-    }
-    
-    .benefits__visual {
-        order: 1;
-        width: 100%;
-        max-width: 300px;
-        height: auto;
-        margin: 0 auto 20px;
-    }
-    
-    .benefits__text-wrapper {
-        order: 2;
-        align-items: center;
-    }
-    
-    .benefits__text {
-        align-items: center;
-    }
-    
-    /* Devices Section */
+    .hero__container,
+    .cta__container,
+    .features__container,
+    .benefits__container,
     .devices-section__container {
         flex-direction: column;
         gap: 40px;
         text-align: center;
     }
     
-    .devices-section__col {
-        order: 2;
-        align-items: center;
-    }
-    
-    .devices-section__text {
-        align-items: center;
-    }
-    
-    .devices-section__visual {
-        order: 1;
-        width: 100%;
-        max-width: 500px;
-        margin: 0 auto 20px;
-    }
-    
-    .devices-section__single-image {
-        width: 100%;
-        height: auto;
-    }
-    
-    /* CTA Section */
-    .cta__container {
-        flex-direction: column;
-        gap: 40px;
-        text-align: center;
-    }
-    
+    .hero__col,
     .cta__col {
-        order: 2;
         align-items: center;
-        gap: 30px;
+        gap: 40px;
     }
     
+    .hero__text,
     .cta__text {
         align-items: center;
     }
     
-    .cta__visual {
-        order: 1;
+    .hero__visual,
+    .cta__visual,
+    .features__visual,
+    .benefits__visual,
+    .devices-section__visual {
         width: 100%;
-        max-width: 400px;
+        max-width: 500px;
         height: auto;
-        margin: 0 auto 20px;
+        order: -1;
     }
     
-    .cta__image {
-        width: 100%;
-        max-width: 400px;
-    }
-    
-    /* Header адаптация */
+    /* Адаптируем header для мобильных */
     .header__nav {
         display: none;
     }
     
-    /* How it works адаптация */
+    /* Адаптируем карточки How it works */
     .how-it-works__row {
         flex-direction: column;
-        gap: 30px;
+        gap: 40px;
     }
     
     .how-it-works__card {
         margin: 0;
     }
     
-    /* Partners адаптация */
+    /* Адаптируем логотипы партнеров */
     .partners__logos {
         flex-wrap: wrap;
         justify-content: center;
-        gap: 30px;
+        gap: 40px;
     }
     
-    /* Footer адаптация */
+    /* Адаптируем футер */
     .footer__columns {
         flex-wrap: wrap;
         gap: 30px;
@@ -249,19 +145,15 @@
     .benefits, 
     .devices-section, 
     .cta {
-        padding: 60px 20px 20px;
-    }
-    
-    .header {
-        padding: 16px 20px;
+        padding: 20px;
     }
     
     .hero__main-headline {
-        font-size: 42px;
+        font-size: 48px;
     }
     
     .hero__secondary-headline {
-        font-size: 32px;
+        font-size: 36px;
     }
     
     .hero__paragraph,
@@ -274,20 +166,12 @@
     }
     
     .header__button {
-        padding: 8px 16px;
-    }
-    
-    /* Уменьшаем размеры изображений */
-    .hero__visual,
-    .features__visual,
-    .benefits__visual,
-    .devices-section__visual {
-        max-width: 400px;
+        padding: 8px 12px;
     }
     
     .footer__columns {
         flex-direction: column;
-        gap: 25px;
+        gap: 30px;
     }
     
     .footer__column {
@@ -296,7 +180,7 @@
     
     .footer__bottom {
         flex-direction: column;
-        gap: 15px;
+        gap: 20px;
         text-align: center;
     }
 }
@@ -316,21 +200,15 @@
     }
     
     .header__button {
-        padding: 6px 12px;
-    }
-    
-    .header__button-text,
-    .hero__button-text,
-    .cta__btn-text {
+        padding: 6px 10px;
         font-size: 14px;
     }
     
-    /* Уменьшаем изображения */
-    .hero__visual,
-    .features__visual,
-    .benefits__visual,
-    .devices-section__visual {
-        max-width: 300px;
+    /* Минимальные размеры для читаемости */
+    .header__button-text,
+    .hero__button-text,
+    .cta__btn-text {
+        font-size: 14px !important;
     }
     
     .partners__logos {
@@ -348,7 +226,7 @@
     }
 }
 
-/* Очень маленькие экраны */
+/* Очень маленькие экраны  */
 @media (max-width: 360px) {
     .hero__main-headline {
         font-size: 32px;
@@ -359,7 +237,7 @@
     }
     
     .header__logo {
-        font-size: 32px;
+        font-size: 40px;
     }
     
     .header__buttons-group {
@@ -370,13 +248,5 @@
     .header__button {
         width: 100%;
         justify-content: center;
-    }
-    
-    /* Еще больше уменьшаем изображения */
-    .hero__visual,
-    .features__visual,
-    .benefits__visual,
-    .devices-section__visual {
-        max-width: 250px;
     }
 }
