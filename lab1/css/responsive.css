@@ -392,6 +392,11 @@
         margin: 0 auto;
         padding: 0;
     }
+
+    .benefits__text-wrapper {
+        order: 2;
+        align-items: center;
+    }
     
     .benefits__visual img {
         width: 100%;
@@ -429,6 +434,11 @@
         max-width: 100%;
         margin: 0 auto;
         padding: 0;
+    }
+
+    .devices-section__col {
+        order: 2;
+        align-items: center;
     }
     
     .devices-section__single-image {
