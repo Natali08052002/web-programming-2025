@@ -29,6 +29,36 @@
     .footer {
         padding: 0 40px;
     }
+
+    .benefits__container {
+        flex-direction: column;
+        text-align: center;
+        display: flex;
+    }
+    
+    .benefits__visual {
+    order: 1; 
+    }
+
+    .benefits__text-wrapper {
+        order: 2; 
+        align-items: center;
+    }
+
+    .devices-section__container {
+        flex-direction: column;
+        text-align: center;
+        display: flex;
+    }
+
+    .devices-section__visual {
+        order: 1; 
+    }
+
+    .devices-section__col {
+        order: 2; 
+        align-items: center;
+    }
 }
 
 /* Для экранов меньше 1200px */
