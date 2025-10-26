@@ -1,6 +1,6 @@
 /* ===== АДАПТИВНОСТЬ ===== */
 
-/* Для экранов больше 1440px - центрируем контент */
+/* Для экранов больше 1440px */
 @media (min-width: 1441px) {
     .header__container,
     .hero__container,
@@ -51,7 +51,7 @@
         padding: 80px 40px 40px;
     }
     
-    /* HEADER - начинаем скрывать элементы */
+    /* HEADER  */
     .header__nav {
         display: none;
     }
@@ -93,7 +93,7 @@
         gap: 60px;
     }
     
-    /* FEATURES - перемещаем картинку под текст */
+    /* FEATURES  */
     .features__container {
         flex-direction: column;
         gap: 40px;
@@ -145,7 +145,7 @@
         align-items: center;
     }
     
-    /* FOOTER - адаптируем колонки */
+    /* FOOTER  */
     .footer__columns {
         flex-wrap: wrap;
         gap: 30px;
@@ -156,7 +156,7 @@
     }
 }
 
-/* ДЛЯ МОБИЛЬНЫХ УСТРОЙСТВ  */
+/* ДЛЯ МОБИЛЬНЫХ УСТРОЙСТВ */
 @media (max-width: 768px) {
     /* Общие стили для всех секций */
     .header, .hero, .partners, .how-it-works, 
@@ -211,6 +211,16 @@
         width: 100%;
     }
     
+    .hero__text {
+        order: 1;
+    }
+    
+    .hero__buttons-group {
+        order: 2;
+        justify-content: center;
+        margin: 20px 0;
+    }
+    
     .hero__visual {
         order: 3;
         width: 100%;
@@ -218,12 +228,6 @@
         height: auto;
         margin: 0;
         padding: 0 10px;
-    }
-    
-    .hero__buttons-group {
-        order: 2;
-        justify-content: center;
-        margin: 20px 0;
     }
     
     .hero__single-image {
@@ -341,7 +345,7 @@
     
     .benefits__visual img {
         width: 100%;
-        max-width: 250px;
+        max-width: 180px; 
         height: auto;
         display: block;
         margin: 0 auto;
@@ -378,7 +382,7 @@
     
     .devices-section__single-image {
         width: 100%;
-        max-width: 280px;
+        max-width: 190px; 
         height: auto;
         display: block;
         margin: 0 auto;
@@ -394,7 +398,7 @@
         line-height: 1.4;
     }
     
-    /* CTA SECTION  */
+    /* CTA SECTION - правильный порядок */
     .cta {
         padding: 50px 16px;
     }
@@ -507,12 +511,13 @@
         max-width: 280px;
     }
     
-    .devices-section__single-image {
-        max-width: 240px;
+    /* BENEFITS и DEVICES */
+    .benefits__visual img {
+        max-width: 150px;
     }
     
-    .benefits__visual img {
-        max-width: 220px;
+    .devices-section__single-image {
+        max-width: 160px; 
     }
     
     .features__macbook {
@@ -545,12 +550,13 @@
         max-width: 250px;
     }
     
-    .devices-section__single-image {
-        max-width: 220px;
+    /* BENEFITS и DEVICES */
+    .benefits__visual img {
+        max-width: 140px;
     }
     
-    .benefits__visual img {
-        max-width: 200px;
+    .devices-section__single-image {
+        max-width: 150px;
     }
     
     /* PARTNERS - логотипы в 1 колонку */
