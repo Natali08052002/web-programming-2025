@@ -119,9 +119,14 @@ a {
 
 
 @media (max-width: 768px) {
-    body {
+    html, body {
         overflow-x: hidden;
         width: 100%;
+        position: relative;
+    }
+    
+    body {
+        -webkit-text-size-adjust: 100%;
     }
     
     img {
@@ -129,7 +134,11 @@ a {
         height: auto;
     }
     
-    [class*="__container"] {
-        padding: 0 8px;
+    /* Сброс всех возможных конфликтующих стилей */
+    .hero__visual,
+    .benefits__visual,
+    .devices-section__visual {
+        max-width: 100% !important;
+        width: 100% !important;
     }
 }
