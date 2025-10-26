@@ -99,10 +99,7 @@
         object-fit: contain;
     }
 
-    .devices-section__container,
-    .benefits__container {
-        gap: 60px;
-    }
+
     
     /* FEATURES */
     .features__container {
@@ -149,7 +146,7 @@
     }
     
     .benefits__visual {
-    order: 1; 
+        order: 1; 
     }
 
     .benefits__text-wrapper {
