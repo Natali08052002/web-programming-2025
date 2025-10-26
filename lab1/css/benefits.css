@@ -34,6 +34,8 @@
     height: auto;
     max-width: 368px;
     object-fit: contain;
+    box-sizing: border-box;
+    max-width: 100%;
 }
 
 /* Обертка для текстового контента */
@@ -84,4 +86,8 @@
     letter-spacing: var(--body-XL-letter-spacing);
     line-height: var(--body-XL-line-height);
     font-style: var(--body-XL-font-style);
+}
+
+.benefits {
+    box-sizing: border-box;
 }
