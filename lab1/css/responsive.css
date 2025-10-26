@@ -42,6 +42,25 @@
         width: 450px;
         height: 400px;
     }
+
+        .benefits__visual {
+    order: 1; 
+    }
+
+    .benefits__text-wrapper {
+        order: 2; 
+        align-items: center;
+    }
+
+
+    .devices-section__visual {
+        order: 1; 
+    }
+
+    .devices-section__col {
+        order: 2; 
+        align-items: center;
+    }
 }
 
 /* Для экранов меньше 1024px - ПЛАНШЕТНАЯ ВЕРСИЯ */
