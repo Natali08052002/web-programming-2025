@@ -276,7 +276,7 @@
         font-size: 16px !important;
     }
     
-    /* BENEFITS SECTION  */
+    
     .benefits {
         padding: 40px 15px !important;
     }
@@ -311,7 +311,7 @@
         font-size: 16px !important;
     }
     
-    /* DEVICES SECTION  */
+    
     .devices-section {
         padding: 40px 15px !important;
     }
@@ -345,8 +345,9 @@
         font-size: 16px !important;
     }
     
-    /* CTA SECTION */
-        .cta {
+    /* CTA SECTION */ 
+
+    .cta {
         padding: 40px 15px !important;
     }
     
@@ -455,6 +456,10 @@
         width: 60% !important;
     }
     
+    .cta__image {
+        max-width: 220px !important;
+    }
+    
     .partners__logo {
         flex: 0 0 calc(50% - 15px);
     }
@@ -488,8 +493,11 @@
         width: 55% !important;
     }
     
+    .cta__image {
+        max-width: 200px !important;
+    }
+    
     .partners__logo {
         flex: 0 0 100%;
     }
 }
-
