@@ -1,6 +1,6 @@
 /* ===== АДАПТИВНОСТЬ ===== */
 
-/* Для экранов больше 1440px */
+/* Для экранов больше 1440px - центрируем контент */
 @media (min-width: 1441px) {
     .header__container,
     .hero__container,
@@ -51,7 +51,7 @@
         padding: 80px 40px 40px;
     }
     
-
+    /* HEADER - начинаем скрывать элементы */
     .header__nav {
         display: none;
     }
@@ -60,44 +60,33 @@
         margin-left: 0;
     }
     
-
+    /* HERO - для планшета */
     .hero__container {
         flex-direction: column;
         gap: 60px;
         text-align: center;
-        display: flex;
     }
     
     .hero__col {
-        order: 1;
         align-items: center;
         gap: 40px;
     }
     
     .hero__text {
-        order: 1;
         align-items: center;
     }
     
-    .hero__buttons-group {
-        order: 2;
-        justify-content: center;
-        margin: 20px 0;
-    }
-    
     .hero__visual {
-        order: 3;
         width: 100%;
         max-width: 500px;
         height: 400px;
-        margin: 0 auto;
+        margin: 0;
     }
     
     .hero__single-image {
         width: 100%;
         height: 100%;
         object-fit: contain;
-        transform: none;
     }
 
     .devices-section__container,
@@ -105,21 +94,19 @@
         gap: 60px;
     }
     
-
+    /* FEATURES - для планшета оставляем как есть */
     .features__container {
         flex-direction: column;
         gap: 40px;
         text-align: center;
-        display: flex;
-    }
-    
-    .features__col {
-        order: 1;
-        align-items: center;
     }
     
     .features__visual {
         order: 2;
+    }
+    
+    .features__col {
+        align-items: center;
     }
     
     .features__macbook {
@@ -127,7 +114,7 @@
         margin: 0 auto;
     }
     
-
+    /* HOW IT WORKS - карточки под друг другом */
     .how-it-works__row {
         flex-direction: column;
         gap: 30px;
@@ -137,40 +124,29 @@
         margin: 0 !important;
     }
     
-
+    /* PARTNERS - логотипы в несколько рядов */
     .partners__logos {
         flex-wrap: wrap;
         justify-content: center;
         gap: 40px;
     }
     
-
+    /* CTA - для планшета */
     .cta__container {
         flex-direction: column;
         gap: 40px;
         text-align: center;
-        display: flex;
     }
     
     .cta__visual {
-        order: 1;
+        order: -1;
     }
     
     .cta__col {
-        order: 2;
         align-items: center;
     }
     
-    .cta__text {
-        order: 1;
-    }
-    
-    .cta__buttons-group {
-        order: 2;
-        justify-content: center;
-        margin-top: 20px;
-    }
-
+    /* FOOTER - адаптируем колонки */
     .footer__columns {
         flex-wrap: wrap;
         gap: 30px;
@@ -183,7 +159,7 @@
 
 /* МОБИЛЬНАЯ ВЕРСИЯ - 768px и меньше */
 @media (max-width: 768px) {
-
+    /* Общие стили для всех секций */
     body {
         overflow-x: hidden;
         width: 100%;
@@ -246,7 +222,7 @@
         font-size: 12px;
     }
     
-
+    /* HERO SECTION - порядок: заголовок → текст → кнопка → картинка */
     .hero__container {
         flex-direction: column;
         gap: 30px;
@@ -303,7 +279,7 @@
         line-height: 1.4;
     }
     
-
+    /* CTA SECTION - порядок: картинка → заголовок → текст → кнопка */
     .cta {
         padding: 50px 16px;
     }
@@ -355,7 +331,7 @@
         line-height: 1.4;
     }
     
-
+    /* FEATURES SECTION - порядок: картинка → текст */
     .features {
         padding: 50px 16px;
     }
@@ -396,7 +372,7 @@
         line-height: 1.4;
     }
     
-
+    /* BENEFITS SECTION - картинка в 1.5 раза меньше */
     .benefits {
         padding: 50px 16px;
     }
@@ -435,7 +411,7 @@
         line-height: 1.4;
     }
     
-
+    /* DEVICES SECTION - картинка в 1.5 раза меньше */
     .devices-section {
         padding: 50px 16px;
     }
@@ -544,7 +520,7 @@
 
 /* ОЧЕНЬ МАЛЕНЬКИЕ ЭКРАНЫ - 480px и меньше */
 @media (max-width: 480px) {
-/
+    /* HEADER - еще компактнее */
     .header__logo {
         font-size: 24px;
     }
@@ -558,7 +534,7 @@
         font-size: 11px;
     }
     
-
+    /* Уменьшаем размеры картинок */
     .hero__single-image {
         max-width: 240px;
     }
