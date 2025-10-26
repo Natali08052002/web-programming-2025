@@ -72,7 +72,7 @@
         height: 400px;
     }
     
-    
+    /* Для планшета оставляем обычные размеры картинок */
     .benefits__visual img {
         max-width: 300px;
     }
@@ -133,7 +133,7 @@
         white-space: nowrap;
     }
     
-    /* HERO SECTION */
+    /* HERO SECTION - ПОРЯДОК: заголовок → текст → кнопка → картинка */
     .hero__container {
         display: flex !important;
         flex-direction: column !important;
@@ -276,7 +276,7 @@
         font-size: 16px !important;
     }
     
-    
+    /* BENEFITS SECTION - КАРТИНКА В 1.5 РАЗА МЕНЬШЕ */
     .benefits {
         padding: 40px 15px !important;
     }
@@ -311,7 +311,7 @@
         font-size: 16px !important;
     }
     
-    
+    /* DEVICES SECTION - КАРТИНКА В 1.5 РАЗА МЕНЬШЕ */
     .devices-section {
         padding: 40px 15px !important;
     }
@@ -345,8 +345,7 @@
         font-size: 16px !important;
     }
     
-    /* CTA SECTION */ 
-
+    /* CTA SECTION */
     .cta {
         padding: 40px 15px !important;
     }
@@ -355,14 +354,12 @@
         flex-direction: column;
         gap: 25px;
         text-align: center;
-        display: flex;
     }
     
     .cta__visual {
-        order: 1 !important;
+        order: 1;
         width: 100%;
         height: auto;
-        margin-bottom: 10px;
     }
     
     .cta__image {
@@ -370,44 +367,14 @@
         max-width: 250px !important;
         height: auto;
         margin: 0 auto;
-        display: block;
-    }
-    
-    .cta__col {
-        order: 2 !important;
-        align-items: center;
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        gap: 20px;
-    }
-    
-    .cta__text {
-        order: 1 !important;
-        width: 100%;
-    }
-    
-    .cta__top {
-        order: 1 !important;
-        width: 100%;
     }
     
     .cta__heading {
         font-size: 28px !important;
-        margin-bottom: 15px;
     }
     
     .cta__description {
         font-size: 16px !important;
-        margin-bottom: 20px;
-        line-height: 1.4;
-    }
-    
-    .cta__buttons-group {
-        order: 2 !important;
-        justify-content: center;
-        width: 100%;
-        margin-top: 10px;
     }
     
     /* FOOTER */
@@ -456,10 +423,6 @@
         width: 60% !important;
     }
     
-    .cta__image {
-        max-width: 220px !important;
-    }
-    
     .partners__logo {
         flex: 0 0 calc(50% - 15px);
     }
@@ -491,10 +454,6 @@
     .devices-section__single-image {
         max-width: 150px !important;
         width: 55% !important;
-    }
-    
-    .cta__image {
-        max-width: 200px !important;
     }
     
     .partners__logo {
