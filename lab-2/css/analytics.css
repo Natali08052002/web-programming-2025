@@ -1,0 +1,121 @@
+/* ===== ANALYTICS SECTION ===== */
+.analytics {
+  display: flex;
+  align-items: center;
+  padding: 120px 0;
+  background-color: #FFFFFF;
+  width: 100%;
+}
+
+.analytics__container {
+  max-width: var(--max-container-width);
+  margin: 0 auto;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-left: -70px; 
+}
+
+/* ===== ANALYTICS VISUAL ===== */
+.analytics__visual {
+  flex: 1;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  height: 800px;
+}
+
+.analytics__phone {
+  width: auto;
+  height: 100%;
+  max-height: 800px;
+  object-fit: contain;
+  margin-left: 30px;
+}
+
+/* ===== ANALYTICS CONTENT ===== */
+.analytics__content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 44px;
+  max-width: 520px;
+  margin-left: -80px; 
+}
+
+/* ===== ANALYTICS TEXTS ===== */
+.analytics__texts {
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+}
+
+.analytics__title {
+  font-family: "Roboto", Helvetica;
+  font-weight: 600;
+  color: #18063c;
+  font-size: 44px;
+  letter-spacing: 0;
+  line-height: 62px;
+  margin: 0;
+}
+
+.analytics__description {
+  opacity: 0.8;
+  font-family: "Roboto", Helvetica;
+  font-weight: 400;
+  color: #3f3f3f;
+  font-size: 17px;
+  letter-spacing: 0;
+  line-height: 32px;
+  margin: 0;
+}
+
+/* ===== ANALYTICS FEATURES ===== */
+.analytics__features {
+  display: flex;
+  flex-direction: column;
+  gap: 44px;
+}
+
+.analytics__feature {
+  display: flex;
+  gap: 22px;
+  align-items: flex-start;
+}
+
+.analytics__feature-icon {
+  width: 80px;
+  height: 80px;
+  flex-shrink: 0;
+  object-fit: contain;
+}
+
+.analytics__feature-texts {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  flex: 1;
+}
+
+.analytics__feature-title {
+  font-family: "Roboto", Helvetica;
+  font-weight: 600;
+  color: #3f3f3f;
+  font-size: 26px;
+  letter-spacing: 0;
+  line-height: 34px;
+  margin: 0;
+}
+
+.analytics__feature-desc {
+  opacity: 0.8;
+  font-family: "Roboto", Helvetica;
+  font-weight: 400;
+  color: #3f3f3f;
+  font-size: 17px;
+  letter-spacing: 0;
+  line-height: 28px;
+  margin: 0;
+}

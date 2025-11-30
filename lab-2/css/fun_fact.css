@@ -1,0 +1,64 @@
+/* ===== FUN FACT SECTION ===== */
+.fun-fact {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 0;
+  background-color: #FFF8F2;
+  width: 100%;
+}
+
+.fun-fact__container {
+  max-width: var(--max-container-width);
+  margin: 0 auto;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.fun-fact__expertises {
+  width: 727px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.fun-fact__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 9.1px;
+  flex: 1;
+}
+
+.fun-fact__number {
+  font-family: "Roboto", Helvetica;
+  font-weight: 600;
+  color: #18063c;
+  font-size: 48px;
+  letter-spacing: 0;
+  line-height: 64px;
+  white-space: nowrap;
+  text-align: center;
+  height: 58.43px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.fun-fact__label {
+  opacity: 0.6;
+  font-family: "Roboto", Helvetica;
+  font-weight: 400;
+  color: #3f3f3f;
+  font-size: 18px;
+  letter-spacing: 0;
+  line-height: 18px;
+  white-space: nowrap;
+  text-align: center;
+  height: 16.43px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

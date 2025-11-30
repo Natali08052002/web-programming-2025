@@ -1,0 +1,118 @@
+/* Переменные и сброс стилей */
+:root {
+  --blue-gray100: rgba(241, 245, 249, 1);
+  --blue-gray300: rgba(203, 213, 225, 1);
+  --blue-gray600: rgba(71, 85, 105, 1);
+  --blue-gray900: rgba(15, 23, 42, 1);
+  --white: rgba(255, 255, 255, 1);
+  --blue-100: rgba(219, 234, 254, 1);
+  --cool-gray400: rgba(156, 163, 175, 1);
+  --cool-gray500: rgba(107, 114, 128, 1);
+  --cool-gray600: rgba(75, 85, 99, 1);
+  --overlaydark-25: rgba(18, 22, 25, 0.25);
+  --max-container-width: 1440px;
+  
+  /* Типографика */
+  --heading-1-m-font-family: "Roboto", Helvetica;
+  --heading-1-m-font-weight: 800;
+  --heading-1-m-font-size: 72px;
+  --heading-1-m-letter-spacing: 0px;
+  --heading-1-m-line-height: 110.00000238418579%;
+  
+  --heading-2-font-family: var(--heading-1-m-font-family);
+  --heading-2-font-weight: var(--heading-1-m-font-weight);
+  --heading-2-font-size: 56px;
+  --heading-2-letter-spacing: var(--heading-1-m-letter-spacing);
+  --heading-2-line-height: var(--heading-1-m-line-height);
+  
+  --body-XXL-font-family: var(--heading-1-m-font-family);
+  --body-XXL-font-weight: 400;
+  --body-XXL-font-size: 24px;
+  --body-XXL-letter-spacing: var(--heading-1-m-letter-spacing);
+  --body-XXL-line-height: 160.0000023841858%;
+  
+  --button-XL-font-family: var(--heading-1-m-font-family);
+  --button-XL-font-weight: 700;
+  --button-XL-font-size: 24px;
+  --button-XL-letter-spacing: 0.5px;
+  --button-XL-line-height: 24px;
+  
+  --button-m-font-family: var(--heading-1-m-font-family);
+  --button-m-font-weight: 500;
+  --button-m-font-size: 16px;
+  --button-m-letter-spacing: var(--button-XL-letter-spacing);
+  --button-m-line-height: 24px;
+  
+  --heading-6-font-family: var(--heading-1-m-font-family);
+  --heading-6-font-weight: 700;
+  --heading-6-font-size: 24px;
+  --heading-6-letter-spacing: var(--heading-1-m-letter-spacing);
+  --heading-6-line-height: var(--heading-1-m-line-height);
+  
+  --body-XL-font-family: var(--heading-1-m-font-family);
+  --body-XL-font-weight: 400;
+  --body-XL-font-size: 20px;
+  --body-XL-letter-spacing: var(--heading-1-m-letter-spacing);
+  --body-XL-line-height: 179.99999523162842%;
+
+  --heading-5-font-family: var(--heading-1-m-font-family);
+  --heading-5-font-weight: 700;
+  --heading-5-font-size: 32px;
+  --heading-5-letter-spacing: var(--heading-1-m-letter-spacing);
+  --heading-5-line-height: var(--heading-1-m-line-height);
+  
+  --subtitle-m-font-family: var(--heading-1-m-font-family);
+  --subtitle-m-font-weight: 500;
+  --subtitle-m-font-size: 16px;
+  --subtitle-m-letter-spacing: var(--heading-1-m-letter-spacing);
+  --subtitle-m-line-height: var(--heading-1-m-line-height);
+  
+  --body-m-font-family: var(--heading-1-m-font-family);
+  --body-m-font-weight: 400;
+  --body-m-font-size: 16px;
+  --body-m-letter-spacing: var(--heading-1-m-letter-spacing);
+  --body-m-line-height: 139.9999976158142%;
+  
+  --body-XS-font-family: var(--heading-1-m-font-family);
+  --body-XS-font-weight: 400;
+  --body-XS-font-size: 12px;
+  --body-XS-letter-spacing: var(--heading-1-m-letter-spacing);
+  --body-XS-line-height: var(--body-m-line-height);
+  
+  /* Тени */
+  --shadow-dark-l: 0px 0px 6px 0px rgba(0, 0, 0, 0.07), 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
+  --shadow-dark-XXL: 0px 0px 15px 0px rgba(0, 0, 0, 0.07), 0px 25px 50px -12px rgba(0, 0, 0, 0.25);
+}
+
+/* Импорт шрифтов и сброс стилей */
+@import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;800&display=swap');
+
+/* Базовые стили страницы */
+* {
+  -webkit-font-smoothing: antialiased;
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0px;
+  height: 100%;
+  font-family: 'Roboto', sans-serif;
+}
+
+/* Стили для доступности */
+button:focus-visible {
+  outline: 2px solid #4a90e2 !important;
+  outline: -webkit-focus-ring-color auto 5px !important;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Общие стили для контейнеров */
+[class*="__container"] {
+  max-width: var(--max-container-width);
+  margin: 0 auto;
+  width: 100%;
+}
