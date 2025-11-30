@@ -1,0 +1,10 @@
+/* ===== ИМПОРТ МОДУЛЕЙ CSS ===== */
+@import url('./css/base.css');
+@import url('./css/header.css');
+@import url('./css/hero.css');
+@import url('./css/fun_fact.css');
+@import url('./css/features.css');
+@import url('./css/analytics.css');
+@import url('./css/get-it-now.css');
+@import url('./css/footer.css');
+@import url('./css/responsive.css');
